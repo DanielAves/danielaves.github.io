@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Daniel Aves Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<h1>Hi, I'm Daniel Aves</h1>
+					<br>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/daniel-aves/" class="icon brands alt fa-linkedin"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/DanielAves" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+					<p>I’m passionate about development and eager to solve real world problems.<br>Below are some examples of my work so far:</p>
+					<ul class="actions special">
+						<li><a href="#one" class="button scrolly">View my work</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Password Manager
+							</header>
+							<p>Using SHA256 encryption this web-based application allows users to store and generate random passwords for sites they use. Saved information is only viewable and decrypted upon successful authentication for a registered account.</p>
+							<div class="stackList">
+								<p><Strong>Stack: </Strong>Django, Python, JavaScript, HTML, CSS</p>
+							</div>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/password-organiser-gif.gif" alt="" /></span>
+							<ul class="actions special">
+								<li><a href="https://danaves.pythonanywhere.com/" class="button wide">View Project</a></li>
+								<li><a href="https://github.com/DanielAves/Password-Organiser" class="button wide">View Code</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two">
+				<div class="lineBreak">
+					
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style1 special">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-4 col-12-medium">
+							<h3>To-Do list</h3>
+							<span class="image fit"><img src="images/todolist-gif.gif" alt="" /> </span>
+							<p>Simple To-Do list created to try new frameworks.</p>
+							<div class="stackList">	
+								<Strong>Stack:</Strong> Python, React, JavaScript, HTML, CSS
+							</div>
+							<br>
+						
+							<ul class="actions special">
+								<li><a href="https://github.com/DanielAves/To-Do-List" class="button">View Code</a></li>
+							</ul>
+						</div>
+						<div class="col-4 col-12-medium">
+							<h3>Stock price application</h3>
+							<span class="image fit"><img src="images/stockprice-application.JPG" id="myImg" alt=""/></span>
+							
+							<p>A distributed application that connects to 3 REST APIS to return and display stock information:<br>
+								<Strong>1.</Strong> Retrieves stock information for the entered company name.<br>
+								<Strong>2.</Strong> Fetches stock price data (present & historical) for the queried stock code.<br>
+								<Strong>3.</Strong> Own hosted rest API that calculates the stock percentage change over a 60 day period.</p>
+							<div class="stackList">	
+								<Strong>Stack:</Strong> Java, SpringBoot, JavaScript, HTML, CSS
+							</div>
+							<br>
+							<ul class="actions special">
+								<li><a href="https://github.com/DanielAves/Stock-Price-Application" class="button">View Code</a></li>
+							</ul>
+						</div>
+						<div class="col-4 col-12-medium">
+							<h3>Mobile recipe search</h3>
+							<span class="image fit"><img src="images/mobile-app-gif.gif" alt="" /></span>
+							<p>An android app created as a join project that queries a recipe API to allow direct access to a community based recipe database. Recipes can be extensively filtered; ingredients can be saved directly to a shopping list; recipes can be filtered based on ingredients you might have in your cupboard; conversation between different weight metrics can be carried out.</p>
+							<div class="stackList">		
+								<Strong>Stack:</Strong> Kotlin, Java
+							</div>
+							<br>
+							<ul class="actions special">
+								<li><a href="https://github.com/DanielAves/Recipe-App" class="button">View Code</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+
+		<!-- Four -->
+			<section id="four" class="main style2 special">
+				<div class="container">
+					<header class="major">
+						<h2>About me</h2>
+					</header>
+					<p>I’m a diligent thinker that enjoys contemplating the ways in which processes can be optimized or refined using technology. I’m often looking for ways to broaden my skill set whether that be starting a new side project or keeping up to date with the latest technologies and frameworks available to developers. Real world business problems excite me, and I enjoy being part of a team to deliver the best possible solutions.<br> 
+						In my spare time I like to keep fit and healthy by regularly attending the gym and going out on my mountain bike. 
+						</p>
+				</div>
+			</section>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+				
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementById("myImg");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img.onclick = function(){
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+				
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+				  modal.style.display = "none";
+				}
+			</script>
+
+	</body>
+</html>
